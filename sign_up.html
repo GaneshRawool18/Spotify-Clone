@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up for Music Streaming Service</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #616778;
+}
+
+.container {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: #15b1b6;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #360f7e;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #494a49;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Sign Up for Your Music Account</h2>
+    <form id="signupForm" action="./virat" method="post" onsubmit="return validateForm()">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name.." required>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email.." required>
+    
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Your password.." required>
+    
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required>
+    
+        <input type="checkbox" id="agree" name="agree" required>
+        <label for="agree">I agree to the terms and conditions</label>
+    
+        <input type="submit" value="Sign Up">
+    </form>
+    
+</div>
+
+</body>
+</html>

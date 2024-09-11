@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(218, 214, 214);
+            padding: 10px 20px;
+        }
+        
+        .navbar a {
+            text-decoration: none;
+            color: rgb(35, 17, 103);
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px; 
+            background-color: rgb(201, 198, 184); 
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: rgb(26, 53, 160); 
+            color: white; 
+        }
+
+        h1 {
+            text-align: center;
+            background-color: rgb(218, 214, 214);
+        }
+
+        .coming-container {
+            display: grid;
+            gap: 1rem;
+            max-width: 80vw;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2rem;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 8px;
+        }
+
+        .swiper-container {
+            padding-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html" >Home</a>
+        <div>
+            <a href="login.html" >Login</a>
+            <a href="signup.html" >Sign Up</a>
+        </div>
+    </div>
+
+    <div>
+        <section class="Coming Soon" id="Coming Soon">
+            <h2 class="heading orange">Coming Soon</h2>
+
+            <div class="swiper-container coming-container">
+                <div class="swiper-wrapper">
+
+                    <!-- Box 1 -->
+                    <div class="swiper-slide">
+                        <div class="box-img">
+                            <img src="covers/img1.jpg" alt="" class="coming">
+                        </div>
+                        <h3>Dunkric</h3>
+                        <span>3.04 min | Adventure</span>
+                    </div>
+
+                    <!-- Box 2 -->
+                    <div class="swiper-slide">
+                        <div class="box-img comming">
+                            <img src="covers/img2.jpg" alt="">
+                        </div>
+                        <h3>Dunkric</h3>
+                        <span>120 min | Adventure</span>
+                    </div>
+
+                    <!-- Rest of the boxes -->
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+    </div> 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".coming-container", {
+            slidesPerView: 'auto',
+            spaceBetween: 20,
+            loop: true,
+            autoplay: {
+                delay: 550,
+                disableOnInteraction: false,
+            },
+            centeredSlides: true,
+            speed: 500,
+            breakpoints: {
+                0: {
+                    slidesPerView: 2,
+                },
+                568: {
+                    slidesPerView: 3,
+                },
+                768: {
+                    slidesPerView: 4,
+                },
+                968: {
+                    slidesPerView: 5,
+                },
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+</html>

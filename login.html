@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login to Music Streaming Service</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-image: url("background_img/bg_img.jpg");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: rgba(255, 255, 255, 0.3); 
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #5743ba;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #121212;
+}
+
+.options {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.options a {
+    text-decoration: none;
+    color: #0d0d0d;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+.container label{
+    font-weight: bolder;
+    font-size: 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Login to Your Music Account</h2>
+        <form id="loginForm" action="./kolhi" method="post">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email.." required>
+        
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Your password.." required>
+        
+            <input type="submit" value="Log In">
+        </form>
+    
+    <div class="options">
+        <a href="forgot_password.html">Forgot Password?</a>
+        <span> | </span>
+        <a href="sign_up.html">Don't have an account? Sign Up</a>
+    </div>
+</div>
+</body>
+</html>

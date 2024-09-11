@@ -1,0 +1,78 @@
+<!-- Box 4 -->
+<div class="swiper-slide box">
+    <div class="box-img">
+        <img src="covers/img4.jpg" alt="">
+
+
+    </div>
+    <h3>Dunkric</h3>
+    <span>120 min | Adventure</span>
+</div>
+
+<!-- Box 5 -->
+<div class="swiper-slide box">
+    <div class="box-img">
+        <img src="covers/img5.jpg" alt="">
+  
+
+    </div>
+    <h3>Dunkric</h3>
+    <span>120 min | Adventure</span>
+</div>
+
+<!-- Box 6 -->
+<div class="swiper-slide box">
+    <div class="box-img">
+        <img src="covers/img6.jpg" alt="">
+   
+    </div>
+    <h3>Dunkric</h3>
+    <span>120 min | Adventure</span>
+</div>
+
+<!-- Box 7 -->
+<div class="swiper-slide box">
+    <div class="box-img">
+        <img src="covers/img7.jpg" alt="">
+
+
+    </div>
+    <h3>Dunkric</h3>
+    <span>120 min | Adventure</span>
+</div>
+
+<!-- Box 8 -->
+<div class="swiper-slide box">
+    <div class="box-img">
+        <img src="covers/img8.jpg" alt="">
+        
+
+    </div>
+    <h3>Dunkric</h3>
+    <span>120 min | Adventure</span>
+</div>
+
+<!-- Box 9 -->
+<div class="swiper-slide box">
+    <div class="box-img">
+        <img src="covers/img9.jpg" alt="">
+      
+
+    </div>
+    <h3>Dunkric</h3>
+    <span>120 min | Adventure</span>
+</div>
+
+<!-- Box 10 -->
+<div class="swiper-slide box">
+    <div class="box-img">
+        <img src="covers/img10.jpg" alt="">
+
+    </div>
+    <h3>Dunkric</h3>
+    <span>120 min | Adventure</span>
+    </div>
+        </div>
+            <div class="swiper-pagination"></div>
+        </section>
+    </div> 
